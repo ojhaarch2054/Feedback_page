@@ -1,0 +1,12 @@
+CREATE TABLE feedback (
+    id SERIAL PRIMARY KEY,
+    Full_Name VARCHAR(255),
+    Email VARCHAR(255),
+    feedback_text TEXT,
+);
+
+INSERT INTO feedback (id, Full_Name, Email, feedback_text)
+SELECT id, Full_Name, Email, feedback_text
+FROM feedback;
+
+ALTER TABLE feedback ADD COLUMN Satisfaction_rating INT;

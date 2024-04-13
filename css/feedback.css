@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(40, 72, 113) !important;
+   
+}
+
+.navbar{
+    margin-top: 2%;
+    
+}
+
+/*style for QUIZZYFY*/
+.navbar-brand{ /*logo*/
+    color: white !important;
+    font-size: xx-large !important;
+    font-weight: 500;
+    margin-left: 30px;
+    text-shadow: 2px 2px 4px rgb(40, 72, 113);
+    background-color:rgb(46, 111, 191) !important ;
+    border-radius: 50%;
+    padding: 2%;
+}
+/*style for navbar links*/
+.nav-link{
+    /*color: #c200ff !important;*/
+    color:white !important;
+    font-size:x-large !important;
+    margin-left: 30px;
+}
+
+/*style by using some hover in nav link*/
+.nav-link:hover{
+    background-color: rgb(46, 111, 191);
+    color: white !important;
+}
+
+.container.feedback-form.shadow-lg{
+    width: 50%;
+    margin-top: auto;
+   
+    
+  
+}
+
+
+.container{
+    border-radius: 1rem;
+    margin-bottom: 2.5%;
+}
+h3{
+    text-align: center;
+}
+.row{
+    margin-top: 5%;
+}
+.feedback-form{
+    background-color: #fff;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.feedback-form .form-control{
+    border-radius: 1rem;
+}
+
+
+.feedback-image img{
+    border-radius: 6rem;
+    width: 20%;
+    
+}
+
+.btnFeedback{
+    margin-top: 2%;
+    align-items: center;
+    border-radius: 1rem;
+    
+}
+
+
+
+i{
+    cursor: pointer;
+    width: 8%;
+    text-align: center;
+}
+
+.form-control{
+    font-size: large;
+
+}
+
+hr {
+    border: none;
+    height: 10px; 
+    background-color: black; 
+  }
+
+
+
