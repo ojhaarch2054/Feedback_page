@@ -15,7 +15,7 @@ const openDb = () => {
     const pool = new Pool({
         user : 'postgres',
         host : 'localhost',
-        database : 'quizzify',
+        database : 'extra feedback',
         password : '2054arch',
         port : 5433
     })

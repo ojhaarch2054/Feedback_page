@@ -6,21 +6,28 @@ const feedbackinstance = new Feedback()
 const stars = document.querySelectorAll('.fa-star');
 
 // Add click event listener to each star
-stars.forEach(function(star) {
+stars.forEach(function(star, index) {
   star.addEventListener('click', function() {
-    // If the star is empty, fill it
-    if (this.classList.contains('far')) {
-      this.classList.remove('far');
-      this.classList.add('fas');
-    } 
-    // If the star is filled, empty it
-   else if (this.classList.contains('fas')) {
-      this.classList.remove('fas');
-      this.classList.add('far');
+    if (star.classList.contains('fas')) {
+      // If this star is already filled, empty it and all stars after it
+      for (let i = index; i < stars.length; i++) {
+        stars[i].classList.remove('fas');
+        stars[i].classList.add('far');
+      }
+    } else {
+      // If this star is not filled, fill it and all stars before it
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.remove('far');
+        stars[i].classList.add('fas');
+      }
+      // Empty all stars
+      for (let i = index + 1; i < stars.length; i++) {
+        stars[i].classList.remove('fas');
+        stars[i].classList.add('far');
+      }
     }
   });
 });
-
 
 console.log(feedbackinstance);
 // Select feedback section input
